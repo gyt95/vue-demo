@@ -12,7 +12,7 @@
         :key="index"
       >
         {{item.title}}
-        <div v-html="currPath===item.path ? item.activeNode : item.node "></div>
+        <div v-html="currPath === item.path ? item.activeNode : item.node "></div>
       </router-link>
     </footer>
   </div>
@@ -33,9 +33,15 @@ export default {
     }
   },
   watch:{
-    '$route'(to,from){
+    '$route'(to,from){  // 通过在$route观察者回调内获取路由状态信息，判断当前路由
       this.currPath = this.$route.path
       console.log(this.currPath)
+    },
+    'currPath':'test' // data()的currPath值变化时，调用test()方法
+  },
+  methods:{
+    test(){
+      console.log('路由改变了')
     }
   }
 }

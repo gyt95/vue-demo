@@ -1,0 +1,43 @@
+<template>
+  <div>
+      Child
+      {{isFlag}}
+      <br><br>
+      <button @click="sum = !sum">...</button>
+      {{sum}}
+  </div>
+</template>
+<script>
+export default {
+  props:{
+      isFlag:{
+          type:Boolean
+      }
+  },
+  data(){
+      return{
+          arr:[
+              {id:1,name:'jack'},
+              {id:2,name:'ben'},
+              {id:3,name:'ken'}
+          ],
+          sum:false
+      }
+  },
+  watch:{   // 监听某个属性，变化则被调用
+      'isFlag':function(){
+          alert(this.isFlag)
+          this.send()
+      },
+      'sum':function(){
+          console.log(this.isFlag)
+      }
+  },
+  methods:{
+      send(){
+          console.log('全选/全清除')
+          console.log(this.arr)
+      }
+  }
+}
+</script>

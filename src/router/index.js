@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Buy from '@/components/Buy'
 import My from '@/components/My'
+import Parent from '@/components/Parent'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/my',
       name: 'My',
       component: My
+    },
+    {
+      path: '/par',
+      name: 'Parent',
+      component: Parent
     }
   ]
 })
