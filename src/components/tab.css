@@ -1,0 +1,21 @@
+.nav-header {
+  border-bottom: 1px solid #b4b7ba;
+}
+.nav-header button {
+  border: 0;
+  background: none;
+  border-radius: 0;
+  color: #878787;
+  outline: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav-header button:hover {
+  background: none;
+  color: orange;
+}
+.nav-header .btn-active {
+  background: none;
+  color: orange;
+  border-bottom: 2px solid orange;
+}

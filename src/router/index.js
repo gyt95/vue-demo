@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Buy from '@/components/Buy'
-import My from '@/components/My'
+import Home from '@/pages/Home'
+import Buy from '@/pages/Buy'
+import My from '@/pages/My'
 
 Vue.use(Router)
 

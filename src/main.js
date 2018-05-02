@@ -3,6 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { 
+    Form,FormItem,Input,
+    TimeSelect,TimePicker,Button 
+} from 'element-ui'
+
+Vue.component(Form.name, Form);
+Vue.component(FormItem.name, FormItem)
+Vue.component(Input.name, Input);
+Vue.component(TimeSelect.name, TimeSelect);
+Vue.component(TimePicker.name, TimePicker);
+Vue.component(Button.name, Button);
 
 Vue.config.productionTip = false
 

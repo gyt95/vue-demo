@@ -33,11 +33,13 @@ export default {
     }
   },
   watch:{
-    '$route'(to,from){
+    '$route'(to,from){     
       this.currPath = this.$route.path
       console.log(this.currPath)
     }
   }
+   // 测试vue是否有自动获取路由path的api，结果：没有。
+   // 当路由跳转时，可以通过router.beforeEach钩子函数或通过watch观察路由对象，再获取当前path值
 }
 </script>
 
@@ -54,20 +56,18 @@ body{
   margin: 0;
   padding: 0;
 }
-div{
-  border: 1px solid;
-}
 span{
   font-weight: bold;
   color: #000;
 }
 main div{
-  height: 400px;
+  /* height: 400px; */
 }
 footer{
   position: fixed;
   bottom:0;
   width: 100%;
+  background: #fff;
 }
 footer a{
   border: 1px solid;
