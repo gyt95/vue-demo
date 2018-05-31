@@ -1,0 +1,118 @@
+.left-box {
+  border: 1px solid #333;
+  width: 500px;
+  height: 600px;
+  margin-right: 20px;
+}
+.vc-calendar {
+  border: 1px solid #333;
+  width: 100%;
+  height: 100%;
+}
+.vc-calendar .vc-nav {
+  background: #38947c;
+  height: 120px;
+  position: relative;
+}
+.vc-calendar .vc-nav-box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.vc-calendar .vc-nav-box p,
+.vc-calendar .vc-nav-box h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+.vc-calendar .vc-nav-body {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40px;
+  margin: auto;
+}
+.vc-calendar .vc-arrow-left {
+  float: left;
+}
+.vc-calendar .vc-arrow-right {
+  float: right;
+}
+.vc-calendar .vc-arrow-left,
+.vc-calendar .vc-arrow-right {
+  width: 90px;
+}
+.vc-calendar .vc-arrow-left:hover,
+.vc-calendar .vc-arrow-right:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.vc-calendar button {
+  background: none;
+  border: 0;
+  font-size: 30px;
+  height: 100%;
+  color: #fff;
+}
+.vc-calendar .vc-main {
+  height: 80%;
+}
+.vc-calendar .vc-main-box {
+  padding: 10px;
+  height: 100%;
+}
+.vc-calendar .vc-main-head {
+  margin-bottom: 10px;
+}
+.vc-calendar .vc-main-head span {
+  display: inline-block;
+  width: 10%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 10px 10px 10px;
+}
+.vc-calendar .vc-main-head span:nth-child(6),
+.vc-calendar .vc-main-head span:nth-child(7) {
+  color: red;
+}
+.vc-calendar .vc-main-body .vc-date-list {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 60px;
+  margin: 0 10px 10px 10px;
+  border: 1px solid transparent;
+}
+.vc-calendar .vc-main-body .vc-date-list:hover {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.vc-calendar .vc-main-body .vc-date-list p {
+  margin: 0;
+  height: 20px;
+  font-size: 14px;
+}
+.vc-calendar .vc-main-body .vc-date-list p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.vc-calendar .vc-date-list-active {
+  border-radius: 5px;
+  background: red;
+  color: #fff;
+}
+.vc-calendar .vc-date-list-disable {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}

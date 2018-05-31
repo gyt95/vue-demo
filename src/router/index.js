@@ -7,6 +7,7 @@ import My from '@/pages/My'
 import Mul from '@/pages/Mul'
 import Mul2 from '@/pages/Mul2'
 import Parent from '@/components/Parent'
+import Cal from '@/pages/calendarExample'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/mul2',
       name: 'Mul2',
       component: Mul2
+    },
+    {
+      path: '/cal',
+      name: 'Cal',
+      component: Cal
     }
   ]
 })
