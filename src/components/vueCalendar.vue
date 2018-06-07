@@ -188,5 +188,5 @@ export default {
 }
 </script>
 <style>
-    @import './calendar.css';
+    @import './calendar.less';
 </style>

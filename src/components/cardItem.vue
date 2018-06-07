@@ -46,5 +46,5 @@ export default {
 };
 </script>
 <style>
-@import "./card.css";
+@import "./card.less";
 </style>

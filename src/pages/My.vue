@@ -41,6 +41,6 @@ export default {
 }
 </script>
 <style>
-    @import url('../components/tab.css');
+    @import url('../components/tab.less');
 </style>
 

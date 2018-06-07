@@ -6,6 +6,7 @@ import Buy from '@/pages/Buy'
 import My from '@/pages/My'
 import Mul from '@/pages/Mul'
 import Mul2 from '@/pages/Mul2'
+import Watch from '@/pages/watch'
 import Parent from '@/components/Parent'
 import Cal from '@/pages/calendarExample'
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/cal',
       name: 'Cal',
       component: Cal
+    },
+    {
+      path: '/watch',
+      name: 'Watch',
+      component: Watch
     }
   ]
 })
