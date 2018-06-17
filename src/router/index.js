@@ -7,6 +7,8 @@ import My from '@/pages/My'
 import Mul from '@/pages/Mul'
 import Mul2 from '@/pages/Mul2'
 import Watch from '@/pages/watch'
+import Copy from '@/pages/copy'
+import Loop from '@/pages/loop'
 import Parent from '@/components/Parent'
 import Cal from '@/pages/calendarExample'
 
@@ -53,6 +55,16 @@ export default new Router({
       path: '/watch',
       name: 'Watch',
       component: Watch
+    },
+    {
+      path: '/copy',
+      name: 'Copy',
+      component: Copy
+    },
+    {
+      path: '/loop',
+      name: 'Loop',
+      component: Loop
     }
   ]
 })
