@@ -10,7 +10,6 @@ import Watch from '@/pages/watch'
 import Copy from '@/pages/copy'
 import Loop from '@/pages/loop'
 import Parent from '@/components/Parent'
-import Cal from '@/pages/calendarExample'
 
 Vue.use(Router)
 
@@ -45,11 +44,6 @@ export default new Router({
       path: '/mul2',
       name: 'Mul2',
       component: Mul2
-    },
-    {
-      path: '/cal',
-      name: 'Cal',
-      component: Cal
     },
     {
       path: '/watch',
