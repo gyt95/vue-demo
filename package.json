@@ -10,10 +10,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "element-ui": "^2.3.4",
+    "element-ui": "^2.12.0",
     "mockjs": "^1.0.1-beta3",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-three-tier-cascader": "^1.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -51,7 +52,7 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },

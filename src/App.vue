@@ -5,7 +5,7 @@
       <router-view/>
     </main>
 
-    <footer>
+    <!-- <footer>
       <router-link 
         :to="item.path"
         v-for="(item,index) in list" 
@@ -14,7 +14,7 @@
         {{item.title}}
         <div v-html="currPath === item.path ? item.activeNode : item.node "></div>
       </router-link>
-    </footer>
+    </footer> -->
   </div>
 </template>
 

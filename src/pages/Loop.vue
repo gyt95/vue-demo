@@ -3,12 +3,17 @@
         <!-- 测试forEach遍历的性能问题。结论：数据越多越庞大，非嵌套遍历的优势越明显 -->
         <button @click="useNesting">嵌套forEach遍历</button>
         <button @click="useOther">非嵌套遍历</button>
+        <count-down :beginTime="1536307968" :endTime="1536394368" :match="'HH:MM'"/>
     </div>
 </template>
 
 <script>
+import CountDown from './Cascader.vue'
 import Mock from 'mockjs'
 export default {
+    components:{
+        CountDown
+    },
     data(){
         return{
             allData: [],

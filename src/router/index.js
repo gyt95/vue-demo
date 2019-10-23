@@ -9,7 +9,13 @@ import Mul2 from '@/pages/Mul2'
 import Watch from '@/pages/watch'
 import Copy from '@/pages/copy'
 import Loop from '@/pages/loop'
+import Cascader from '@/pages/Cascader'
 import Parent from '@/components/Parent'
+import DateP from '@/pages/datePicker.vue'
+import Zoom from '@/pages/zoom.vue'
+import Table from '@/pages/Table.vue'
+import myTable from '@/pages/myTable.vue'
+import MixinsDemo from '@/pages/MixinsDemo.vue'
 
 Vue.use(Router)
 
@@ -59,6 +65,36 @@ export default new Router({
       path: '/loop',
       name: 'Loop',
       component: Loop
+    },
+    {
+      path: '/cascader',
+      name: 'Cascader',
+      component: Cascader
+    },
+    {
+      path: '/date',
+      name: 'DateP',
+      component: DateP
+    },
+    {
+      path: '/zoom',
+      name: 'Zoom',
+      component: Zoom
+    },
+    {
+      path: '/table',
+      name: 'Table',
+      component: Table
+    },
+    {
+      path: '/mytable',
+      name: 'myTable',
+      component: myTable
+    },
+    {
+      path: '/mixins',
+      name: 'MixinsDemo',
+      component: MixinsDemo
     }
   ]
 })
