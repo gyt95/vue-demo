@@ -17,6 +17,9 @@ import Table from '@/pages/Table.vue'
 import myTable from '@/pages/myTable.vue'
 import MixinsDemo from '@/pages/MixinsDemo.vue'
 
+import attrs from '@/pages/communicate1/attrs.vue'
+import provide from '@/pages/communicate2/provide.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -95,6 +98,16 @@ export default new Router({
       path: '/mixins',
       name: 'MixinsDemo',
       component: MixinsDemo
+    },
+    {
+      path: '/attrs',
+      name: 'attrs',
+      component: attrs
+    },
+    {
+      path: '/provide',
+      name: 'provide',
+      component: provide
     }
   ]
 })
